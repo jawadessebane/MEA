@@ -1,0 +1,83 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.mobileEnterpriseProject.controller.EditProject" xmlns="sap.m">
+    <Page showHeader="true" title="Manage members" showFooter="true" showNavButton="false">
+        <content>
+        <List mode="None" width="100%" headerText="Edit member" footerText="" backgroundDesign="Solid" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true">
+                <infoToolbar/>
+                <headerToolbar/>
+                <items>
+                    <InputListItem label="Projectnaam" visible="true">
+                        <content>
+                            <Input id="projectnaam" placeholder="Projectnaam" type="Text" showValueHelp="false" enabled="true" visible="true" width="400px" valueHelpOnly="false" maxLength="0"/>
+                        </content>
+                    </InputListItem>
+                    <InputListItem label="Bedrijfid" visible="true">
+                        <content>
+                            <Input id="bedrijfid" placeholder="Description" type="Text" showValueHelp="false" enabled="true" visible="true" width="400px" valueHelpOnly="false" maxLength="0"/>
+                        </content>
+                    </InputListItem>
+                    <!-- <InputListItem label="Bedrijf" visible="true">
+                     	<content>
+            				<ComboBox id="bedrijfid" items="{ path: '/BedrijfInfoSet' }" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                				
+                					<core:Item text="{Bedrijfnaam}"  enabled="true" key="{Bedrijfid}" />
+                				
+        							 </ComboBox>
+        						 </content>
+        			</InputListItem>-->
+                    <InputListItem label="Description" visible="true">
+                        <content>
+                            <Input id="description" placeholder="Description" type="Text" showValueHelp="false" enabled="true" visible="true" width="400px" valueHelpOnly="false" maxLength="0"/>
+                        </content>
+                    </InputListItem>
+                    <InputListItem label="Projectmanager" visible="true">
+                        <content>
+                            <Input id="projman" placeholder="Description" type="Text" showValueHelp="false" enabled="true" visible="true" width="400px" valueHelpOnly="false" maxLength="0"/>
+                        </content>
+                    </InputListItem>
+                    <InputListItem label="status" visible="true">
+                        <content>
+                            <Input id="status" placeholder="Description" type="Text" showValueHelp="false" enabled="true" visible="true" width="400px" valueHelpOnly="false" maxLength="0"/>
+                        </content>
+                    </InputListItem>
+                    <!--<InputListItem label="Projectmanager" visible="true">
+            								<ComboBox id="projman"  items="{ path: '/MembersInfoSet' }">
+                						<core:Item key="{Memberid}" text="{Naam}"/>
+        							 </ComboBox>
+        			</InputListItem>
+                    <InputListItem label="Label" visible="true">
+                        <content>
+                            <ComboBox editable="true" enabled="true" visible="true" width="50px" valueState="None" maxWidth="100%">
+                                <items>
+                                    <core:Item text="Started" enabled="true" key="Started"/>
+                                     <core:Item text="In progress" enabled="true" key="In progress"/>
+                                      <core:Item text="Finished" enabled="true" key="Finished"/>
+                                </items>
+                            </ComboBox>
+                        </content>
+                    </InputListItem>-->
+                    <InputListItem label="Start date" visible="true">
+                        <content>
+                            <Input id="start" placeholder="Start date" type="Text" showValueHelp="false" enabled="true" visible="true" width="400px" valueHelpOnly="false" maxLength="0"/>
+                        </content>
+                    </InputListItem>
+                	<InputListItem label="End date" visible="true">
+                        <content>
+                            <Input id="end" placeholder="End date" type="Text" showValueHelp="false" enabled="true" visible="true" width="400px" valueHelpOnly="false" maxLength="0"/>
+                        </content>
+                    </InputListItem>
+                </items>
+            </List>
+        </content>
+        <footer>
+            <OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+                <content>
+                    <ToolbarSpacer width=""/>
+                    <Button press="_editProject" text="EDIT" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </content>
+            </OverflowToolbar>
+        </footer>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>
